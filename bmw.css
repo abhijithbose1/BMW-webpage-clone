@@ -1,0 +1,542 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+                                                /* HEADER styling Starts  */
+
+header{
+    height: 100vh;
+    position: relative;
+    background-image: linear-gradient( rgba(0, 0, 0, .329), rgba(255, 255, 255, 0));
+}
+header .inner-container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+}
+#intro-video{
+    width: 100%;
+    object-fit: cover;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -10;
+}
+.inner-container{
+    padding-top: 10px;   
+}
+
+.options-container{
+   display: flex;
+   height: 3.5rem;
+   align-items: center;
+}
+
+.options{
+    width: 450px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1.5px solid white;
+    position: relative;
+    /* transition: all 2s ease-in-out; */
+
+ overflow: hidden;      /*to be uncommented*/
+}
+.options .searchbar{
+    display: flex;
+    position: absolute;
+    right: -465px;
+    transition: all 2s ease-in-out;
+}
+.options .searchbar button{
+    background: black;    /*to delete*/
+}
+.options input{
+    padding: 12px;
+    padding-left: 30px;
+    border: none;
+    /* background: transparent;  to uncomment; */
+    padding-right: 220px;    
+}
+.options a{
+    text-decoration: none;
+    color:white;
+    font-weight: 500;
+    padding: 10.5px 10px;
+    /* border-bottom: 2px solid white; */
+}
+.options a:hover{
+    color: #0653b6;
+    border-bottom: 2px solid #0653b6;
+
+}
+.header-container p{
+    text-align: right;
+    margin-right: 10.5px;
+
+
+}
+
+header ul{
+    list-style: none;
+
+}
+header ul li{
+    float: left;
+}
+#home{
+    color: #0653b6;
+    border-bottom: 2px solid #0653b6;
+}
+
+.options button{
+    height: 42px;
+    width: 42px;
+    border: none;
+    background: transparent;
+    /* background: #000;         delete this line */
+    position: relative;
+}
+
+.options button:hover{
+    cursor: pointer;
+}
+.options #search-open:focus ~ .searchbar{
+    right:0;
+}
+.searchbar :focus{
+    right:0;
+}
+
+.line{
+    width: 10px;
+    height: 25px;
+    border-right: 1px solid rgba(255, 255, 255, 0.537) ;
+}
+.bold{
+    font-weight: bold;
+}
+.header-container p{
+    color: white;
+}
+.bmw-logo{
+    height: 80px;
+    padding-top: 10px;
+    padding-left: 35px;
+
+}
+.bmw-country{
+    display: flex;
+    align-items: center;
+    width: 170px;
+    justify-content: flex-end;
+    padding: 12px;
+    border-bottom: 1.5px solid white;
+
+}
+.bmw-country a{
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+    padding-left: 7px;
+
+}
+                                /* --- nav bar full section finished ---  */
+
+.caption-container{
+    padding: 100px;
+}
+.caption-container h1{
+    font-family: BMWTypeNextLatin,Helvetica,Arial,Hiragino Kaku Gothic ProN,Hiragino Sans,Meiryo,sans-serif;
+    font-size: 75px;
+    font-weight: 100;
+    color: white;
+}
+.reading-time{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding-bottom: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.reading-time h4{
+    color: white;
+    font-weight: 500;
+    font-size: 17px;
+    padding-left: 15px;
+}
+
+                                                /* xx---xx First page end xx---xx */
+
+                                         /* xx -- main-content-container start -- xx */
+
+.main-content-container{
+    padding:0 200px;
+}
+.p-container{
+    padding-top: 60px;
+}
+.p-container p{
+    font-size: 31px;
+    padding-bottom: 30px;
+
+}
+.date{
+    color: rgb(117, 117, 117);
+    font-size: 17px;
+}
+                        /* --- FULL SCREEN IMAGES --- */
+.full-page-img{
+    padding-top: 70px;
+    width: 100%;
+    height: 100vh;
+    
+}
+.full-page-img img{
+    width: 100%;
+}
+                        /* --- FULL SCREEN IMAGES --- */
+
+.range-consumption{
+    display: flex;
+    justify-content: center;
+    column-gap: 30px;
+    margin-top: 30px;
+    border-top :1px solid rgb(187, 187, 187);
+    border-bottom :1px solid rgb(187, 187, 187);
+}
+.range-consumption p{
+    font-size: 16px ;
+    padding: 20px 0px;
+}
+.small-p-container{
+    margin-top: 90px; ;
+    width: 100%;
+    
+}
+.grey{
+    color: grey;
+}
+.light-bold{
+    font-weight: 500;
+}
+.small-p-container p{
+    width: 50%;
+    font-size: 16px;
+}
+.small-p-container p a{
+    color: grey;
+
+}
+
+                            /* --- IMAGE-PARA-CONTAINER ---  */
+
+.image-para-container{
+    width: 100%;
+    display: flex;
+    height: 110vh;
+
+}
+.image-container{
+    flex:1;
+    height: 110vh;
+    background: url(/bmw/bmw04.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.para-container{
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+.para-container .inner{
+    padding: 0px 110px;
+}
+.para-container h2{
+    font-size: 30px;
+    font-weight: 500;
+    padding-bottom: 20px;
+}
+.para-container p{
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 22px;
+}
+.para-container p a{
+    color: grey;
+
+}
+.full-page-video{
+    padding-top: 70px;
+    width: 100%;
+    height: 160vh;
+    
+}
+iframe{
+    width: 100%;
+    height:84.49vh;
+}
+.full-page-video h1{
+    font-weight: 400;
+    font-size: 5rem;
+    text-align: center;
+    line-height: 4.5rem;
+    padding-bottom: 8rem;
+}
+
+                                         /* xx -- main-content-container start -- xx */
+
+
+                                       /* xxx ---find-out-more styling start --- xxx */
+
+.find-out-more{
+    padding: 0 100px ;
+}
+.i4-container{
+    height: 100vh;
+    background:url("/bmw/bmw13.jpg") ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+}
+.caption-button-container{
+    position: absolute;
+    top: 75px;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    padding: 3.5rem 3.5rem;
+}
+.caption-button-container h2{
+    color: white;
+    font-family: BMWTypeNextLatin,Helvetica,Arial,Hiragino Kaku Gothic ProN,Hiragino Sans,Meiryo,sans-serif;
+    font-weight: 400;
+    font-size: 2.7rem;
+}
+.caption-button-container button{
+    background-color: #1c69d4;
+    color: #fff;
+    width: 10rem;
+    margin-top: .5rem;
+    width: 11rem;
+    padding: 1rem 1.5rem;
+    border: none;
+    font-family: BMWTypeNextLatin,Helvetica,Arial,Hiragino Kaku Gothic ProN,Hiragino Sans,Meiryo,sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: all .2s ease-in-out;
+}
+.caption-button-container button:hover{
+    cursor: pointer;
+    background-color: #1854a8;
+
+}
+
+                            /* xxx --- more article styling start --- xxx */
+
+.more-article-container{
+    display: flex;
+    margin-top: 30px;
+    flex-direction: column;
+    width: 100%;
+    height: 90vh;
+    /* background: #0000004e; */
+    
+}
+.h4-container{
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    align-items: center;
+}
+.more-article-container .h4-container h4{
+    font-family: BMWTypeNextLatin,Helvetica,Arial,Hiragino Kaku Gothic ProN,Hiragino Sans,Meiryo,sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+}
+
+                            /* -- slides styling start -- */
+
+
+.slides-container{
+    width: auto;
+    flex: 4;
+    display: flex;
+    column-gap: 3px;
+    /* height: 430px; */
+    overflow: hidden;
+}
+
+.slide{
+    background: url("");
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    height: 430px;
+    overflow: hidden;
+    background: transparent;
+    position: relative;
+    transition: all 4s ease-in-out;
+}
+.slide p{
+    color: white;
+    padding-left: 1rem;
+    font-size: 1rem;
+    font-weight: 500;
+}
+.slide h4{
+    color: white;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+    font-size: 2rem;
+    font-weight: 400;
+}
+.slide img{
+    transition: all 4s ease-in-out;
+    position: absolute;
+    z-index: -5;
+}
+.slide:hover{
+    background-image: linear-gradient(rgba(255, 255, 255, 0),rgba(0, 0, 0, 0.73)); 
+    cursor: pointer;
+    /* animation: animation1 2s ease-in-out 1 forwards; */
+}
+@keyframes animation1{
+    0%{
+        background-image: linear-gradient(rgba(0, 0, 0, 0) , rgba(255, 255, 255, 0));
+    }
+    50%{
+        background-image: linear-gradient( rgba(255, 255, 255, 0),rgba(0, 0, 0, 0.477));  
+    }
+    100%{
+        background-image: linear-gradient(rgba(255, 255, 255, 0),rgba(0, 0, 0, 0.73));  
+    }
+}
+.slide:hover img{
+    transform: scale(1.3);
+
+}
+.slide img{
+    width: 100%;
+}
+
+                            /* -- slides styling end -- */
+
+.more-article-container .button-container{
+    flex:1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 1rem;
+}
+.more-article-container .button-container button{
+    padding: 1rem 1.5rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #0653b6;
+    /* background: rgba(28,105,212,.1); */
+    background:  #f4f4f4;
+    border: none;
+    transition: all 1s ease-in-out;
+}
+.more-article-container .button-container button:hover{
+    background:  #63b5e858;  
+    cursor: pointer;
+}
+
+                            /* xxx --- more article styling end --- xxx */
+
+
+
+                            /* xxx ---credit styling start --- xxx */
+
+.credit{
+    padding-bottom: 100px;
+    padding-top: 50px;
+    
+}
+.credit p{
+    font-weight: 400;
+}
+.credit a{
+    color: grey;
+}
+
+                                /* xxx --- footer styling starts --- xxx */
+
+footer{
+    width: 100%;
+    /* height: 98vh; */
+    padding: 75px 200px;
+    background: #1b1b1b;
+}
+.footer-top{
+    height: 50px;
+}
+footer ul li{
+    float: left;
+    list-style: none;
+    margin-right: 20px;
+   
+}
+.footer-top a{
+    font-size: 15px;
+    font-weight: 600;
+    color:#8e8e8e;
+    text-decoration: none;
+}
+.footer-top a:hover{
+    color: white;
+}
+#english{
+    color: white;
+}
+
+
+
+.footer-mid{
+    display: flex;
+    justify-content: space-between;
+}
+.footer-mid .container{
+    width: 200px;
+    padding: 40px 0;
+}
+.footer-mid .container .heading{
+    padding: 10px 0px;
+    border-bottom: 1px solid  #6b6b6b;
+}
+.footer-mid .container h4{
+    color: white;
+    font-weight: 600;
+}
+
+.footer-mid .container .content a{
+    display: block;
+    color: #8e8e8e;
+    padding-top: 10px;
+    text-decoration: none;
+}
+.footer-mid .container .content a:hover{
+    color: white;
+}
+
+
+
+.footer-bottom h4{
+    color: white;
+    font-weight: 600;
+}
